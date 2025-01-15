@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice</title>
+    <link rel="stylesheet" href="static/invoice_styles.css">
+</head>
+<body>
+    <h1>Invoice</h1>
+
+    <table>
+        <tr>
+            <th>Client Name:</th>
+            <td>{{ client_name }}</td>
+        </tr>
+        <tr>
+            <th>Job Description:</th>
+            <td>{{ job_description }}</td>
+        </tr>
+        <tr>
+            <th>Start Time:</th>
+            <td>{{ start_time }}</td>
+        </tr>
+        <tr>
+            <th>End Time:</th>
+            <td>{{ end_time }}</td>
+        </tr>
+        <tr>
+            <th>Hourly Rate:</th>
+            <td>${{ hourly_rate }}</td>
+        </tr>
+        <tr>
+            <th>Total Hours:</th>
+            <td>{{ total_hours }}</td>
+        </tr>
+        <tr>
+            <th>Total Cost:</th>
+            <td>${{ total_cost }}</td>
+        </tr>
+        <tr>
+            <th>Invoice Due Date:</th>
+            <td>{{ invoice_due }}</td>
+        </tr>
+    </table>
+
+</body>
+</html>

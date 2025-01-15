@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Invoice</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <div class="invoice-form">
+        <h1>Create Invoice</h1>
+        <form action="/create_invoice" method="POST" enctype="multipart/form-data">
+            <label for="client_name">Client Name:</label>
+            <input type="text" id="client_name" name="client_name" required><br><br>
+
+            <label for="invoice_due">Invoice Due Date:</label>
+            <input type="date" id="invoice_due" name="invoice_due" required><br><br>
+
+            <label for="job_description">Job Description:</label>
+            <textarea id="job_description" name="job_description" required></textarea><br><br>
+
+            <label for="start_time">Start Time:</label>
+            <input type="datetime-local" id="start_time" name="start_time" required step="1"><br><br>
+
+            <label for="end_time">End Time:</label>
+            <input type="datetime-local" id="end_time" name="end_time" required step="1"><br><br>
+
+            <label for="hourly_rate">Hourly Rate:</label>
+            <input type="number" id="hourly_rate" name="hourly_rate" step="0.01" required><br><br>
+
+
+            <button type="submit">Create Invoice</button>
+        </form>
+    </div>
+</body>
+</html>
